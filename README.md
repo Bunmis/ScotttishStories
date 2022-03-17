@@ -1,2 +1,2 @@
-# ScotttishStories
-CMM007 Course Work - Scottish Stories Web Application
+# CMM007-CourseWork
+Course Work - Part 2. Scottish Stories Web Application
