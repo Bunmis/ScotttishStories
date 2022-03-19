@@ -9,28 +9,22 @@ body {
 }
 
 
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+
 .mySlides {
     display: none
 }
 img {
     vertical-align: middle;
 }
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: lime;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
 
 /* Position the "next button" to the right */
 .next {
@@ -68,6 +62,32 @@ img {
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+
+  .search {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .search1 {
+    float: right;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .form1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+
+
 
 .img {
     width: 100%;
@@ -107,4 +127,16 @@ img {
     padding: 3px;
     background-color: bisque;
     color: blue;
-  }
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+  .col-container {
+    display: flex;
+    width: 100%;
+}
+  .col {
+    flex: 1;
+    padding: 16px;
+}
