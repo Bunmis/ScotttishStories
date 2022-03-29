@@ -94,13 +94,13 @@
         <h2>Historical Stories</h2>
         <div class="row">
             <div class="column">
-                <img src="Assets/Images/bagpipes.jpg" alt="Snow" style="width:100%">
+                <a href="stories.php"><img src="Assets/Images/bagpipes.jpg" alt="Snow" style="width:100%"></a>
             </div>
             <div class="column">
-                <img src="Assets/Images/isleofskyke.jpg" alt="Forest" style="width:100%">
+                <a href="stories.php"><img src="Assets/Images/isleofskyke.jpg" alt="Forest" style="width:100%"></a>
             </div>
             <div class="column">
-                <img src="Assets/Images/lochness.jpg" alt="Mountains" style="width:100%">
+                <a href="stories.php"><img src="Assets/Images/lochness.jpg" alt="Mountains" style="width:100%"></a>
             </div>
         </div>
         <br>
@@ -108,13 +108,13 @@
         <h2>Historical Objects</h2>
         <div class="row">
             <div class="column">
-                <img src="Assets/Images/bagpipes.jpg" alt="bagpipes" style="width:100%">
+                <a href="stories.php"><img src="Assets/Images/bagpipes.jpg" alt="bagpipes" style="width:100%"></a>
             </div>
             <div class="column">
-                <img src="Assets/Images/isleofskyke.jpg" alt="isleofskyke" style="width:100%">
+                <a href="stories.php"><img src="Assets/Images/isleofskyke.jpg" alt="isleofskyke" style="width:100%"></a>
             </div>
             <div class="column">
-                <img src="Assets/Images/lochness.jpg" alt="lochness" style="width:100%">
+                <a href="stories.php"><img src="Assets/Images/lochness.jpg" alt="lochness" style="width:100%"></a>
             </div>
         </div>
 

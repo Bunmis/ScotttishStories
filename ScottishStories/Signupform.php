@@ -20,7 +20,6 @@
                 <div class="navbar">
                     <div class="menu" id="menu1">
                         <a href="Home.html">Home</a>
-                        <a href="About.html">About Us</a>
                         <a href="Home.html">Stories</a>
                         <a href="signup.html">Story Teller SignUp</a>
                         <a href="#">Login</a>

@@ -1,27 +1,6 @@
 <?php
 include("connection.php"); // Establishing connection with database
 
-if (isset($_GET['approvalID']))
-{
-	$storyID = $_GET['approvalID'];
-
-	$sqlApproval="Update stories set status = 'Approved' WHERE storyid = $storyID";
-	//echo "entered sql";
-	$result=mysqli_query($conn,$sqlApproval);
-
-}
-
-   
-if (isset($_GET['rejectID']))
-{
-	$storyID = $_GET['rejectID'];
-	$sqlReject="Update stories set status = 'Rejected' WHERE storyid = $storyID";
-	//echo "entered sql";
-	$result=mysqli_query($conn,$sqlReject);
-	
-}
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,20 +24,21 @@ if (isset($_GET['rejectID']))
 				<div class="navbar">
 					<div class="menu" id="menu1">
 						<a href="Home.php">Home</a>
-						<a href="AdminStories.php">Admin Stories</a>
-						<a href="Home.php">Stories</a>
+						<a href="Stories.php">Stories</a>
 						<a href="Signupform.php">Story Teller SignUp</a>
 						<a href="Loginform.php">Login</a>
 					</div>
 				</div>
 			</div>
+            <br>
+            <br>
 		</header>
 		<!--Header Ends-->
 
 	<main>
-		<!--Approval Form Starts-->
-		<h1>Stories Pending Approval</h1>	
-		<table>
+		<!--All Stories List Starts-->
+		<h1>Stories</h1>	
+		<table class="table">
 				<tr>
 					<td>Title</td>
 					<td>Author</td>
@@ -69,7 +49,7 @@ if (isset($_GET['rejectID']))
 				</tr>
 				<?php
 
-					$sql="select * FROM stories WHERE status='Pending'";
+					$sql="select * FROM stories WHERE status='Approved'";
 					//echo "entered sql";
 					$result=mysqli_query($conn,$sql);
 
@@ -79,28 +59,22 @@ if (isset($_GET['rejectID']))
 						{
 				?>
 				<tr>
-				<td><?php echo $row['title']; ?></td>
-				<td><?php echo $row['author']; ?></td>
-				<td><?php echo $row['location']; ?></td>
-				<td><?php echo $row['category']; ?></td>
-				<td><?php echo $row['naration']; ?></td>
-				<td>
-					<img src="<?php echo $row['imagePath']; ?>" alt="" height="200px" width="200px">
-				</td>
-				<td>
-					<a href="AdminStories.php?approvalID=<?php echo $row['storyid']; ?>">Approve</a>
-				</td>
-				<td>
-					<a href="AdminStories.php?rejectID=<?php echo $row['storyid']; ?>">Reject</a>
-				</td>
+				    <td><?php echo $row['title']; ?></td>
+                    <td><?php echo $row['author']; ?></td>
+                    <td><?php echo $row['location']; ?></td>
+                    <td><?php echo $row['category']; ?></td>
+                    <td><?php echo $row['naration']; ?></td>
+                    <td>
+					    <img src="<?php echo $row['imagePath']; ?>" alt="" height="200px" width="200px">
+				    </td>
 				</tr>
 				<?php
 				}
-			} 
+			}
 				?>
 		</table>
 
-		<!--Approval Form Ends-->
+		<!--All Stories List Ends-->
 	</main>
 
 	    <!--Footer Starts-->
